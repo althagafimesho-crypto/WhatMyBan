@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What My Ban؟ — بوت توثيق البان والكيك والتايم أوت لديسكورد</title>
+<meta name="description" content="What My Ban؟ بوت ديسكورد يوثّق كل عملية بان أو كيك أو تايم أوت بسجل واضح، ويرسل للمحظورين دعوة رجوع بعد فك الحظر.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--
+  ملاحظة: بدّل الرابطين اللي فيهم YOUR_ بروابط بوتك الفعلية.
+  1) رابط سيرفر الدعم (Discord Invite)
+  2) رابط إضافة البوت (OAuth2 - نفس اللي استخدمته وقت الدعوة لسيرفرك)
+-->
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="#C1443D" stroke-width="2.5"/>
+        <path d="M11 24L29 16" stroke="#C1443D" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#C9A227"/>
+      </svg>
+      <span>What My Ban؟</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">الرئيسية</a></li>
+      <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      <li><a href="terms.html">شروط الاستخدام</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" rel="noopener">سيرفر الدعم</a>
+      <a class="btn btn-primary" href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=1101927424208&scope=bot%20applications.commands" target="_blank" rel="noopener">إضافة البوت</a>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div>
+      <span class="tag">توثيق شفاف للإجراءات الإدارية</span>
+      <h1>كل بان له سبب،<br>وكل قرار له سجل.</h1>
+      <p class="hero-lead">
+        What My Ban؟ بوت ديسكورد يسجّل كل عملية بان أو كيك أو تايم أوت تصير بسيرفرك — مين سواها، ليش، ومتى —
+        ويرسل للعضو المحظور رابط رجوع بعد فك حظره تلقائيًا.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=1101927424208&scope=bot%20applications.commands" target="_blank" rel="noopener">
+          إضافة البوت لسيرفرك
+        </a>
+        <a class="btn btn-ghost" href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" rel="noopener">
+          انضم لسيرفر الدعم
+        </a>
+      </div>
+    </div>
+
+    <div class="log-card" aria-hidden="true">
+      <div class="log-card-inner">
+        <div class="log-card-head">
+          <svg class="log-card-icon" viewBox="0 0 24 24" fill="none"><path d="M14 4l6 6-8.5 8.5a2 2 0 01-1.4.6H6v-4a2 2 0 01.6-1.4L14 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 7l6 6" stroke="currentColor" stroke-width="1.6"/><path d="M4 21h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span class="log-card-title">عملية حظر (Ban)</span>
+        </div>
+        <div class="log-field">
+          <span class="log-field-label">العضو</span>
+          <span class="log-field-value">rakan#0421</span>
+        </div>
+        <div class="log-field">
+          <span class="log-field-label">بواسطة</span>
+          <span class="log-field-value">mod_sara</span>
+        </div>
+        <div class="log-field">
+          <span class="log-field-label">السبب</span>
+          <span class="log-field-value">إعلانات متكررة بدون إذن</span>
+        </div>
+        <div class="log-card-foot">
+          <span>What My Ban؟</span>
+          <span>اليوم 09:14</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2>وش يسوي البوت بالضبط</h2>
+      <p>ثلاث وظائف بس، لكن كل وحدة فيهم تحل مشكلة حقيقية بإدارة السيرفرات.</p>
+    </div>
+
+    <div class="feature-list">
+      <div class="feature-row">
+        <span class="feature-num">01</span>
+        <div>
+          <h3>سجل واضح لكل إجراء</h3>
+          <p>أي بان أو كيك أو تايم أوت يترسل كإمبيد مرتب بقناة تحددها — فيه العضو، الموديريتر المسؤول، السبب، والتاريخ. ما فيه قرارات غامضة أو "مين سوى هذا؟".</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-num">02</span>
+        <div>
+          <h3>دعوة رجوع بعد فك الحظر</h3>
+          <p>وقت ما حد ينبند، يوصله بالخاص رابط دعوة صالح لاستخدام واحد بس — يقدر يستخدمه بعد ما يتفك حظره، بدون ما يحتاج يدور على حد يعطيه رابط جديد.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-num">03</span>
+        <div>
+          <h3>ترحيب على مزاجك</h3>
+          <p>تقدر تخصص رسالة ترحيب الأعضاء الجدد بالكامل، تحدد لها قناة معينة، أو تقفلها تمامًا لو ما تبيها.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>كيف يشتغل</h2>
+      <p>ما يحتاج إعداد معقد — أضفه، حدد قناة، وخلاص شغال.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-index">1</span>
+        <div>
+          <h3>تضيف البوت وتحدد قناة التسجيل</h3>
+          <p>بأمر واحد تحدد أي قناة يترسل لها سجل الإجراءات.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-index">2</span>
+        <div>
+          <h3>يصير إجراء إداري بسيرفرك</h3>
+          <p>موديريتر يسوي بان أو كيك أو تايم أوت — عادي زي ما يسوي دايمًا.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-index">3</span>
+        <div>
+          <h3>البوت يوثّق وينبّه</h3>
+          <p>يترسل السجل لقناتك فورًا، ولو كان بان، يوصل للعضو رابط رجوعه بالخاص.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>جاهز تخلي إدارة سيرفرك أوضح؟</h2>
+    <p>يأخذ أقل من دقيقتين تضيفه وتحدد قناة التسجيل.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=1101927424208&scope=bot%20applications.commands" target="_blank" rel="noopener">إضافة البوت</a>
+      <a class="btn btn-ghost" href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" rel="noopener">سيرفر الدعم</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <span class="footer-note">© 2026 What My Ban؟ — غير تابع لشركة Discord رسميًا.</span>
+    <ul class="footer-links">
+      <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      <li><a href="terms.html">شروط الاستخدام</a></li>
+      <li><a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank" rel="noopener">تواصل معنا</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
